@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAY Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+  <!-- Load Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- Scroll to top button -->
+  <div class="scrollToTop-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+
+  <!-- Header section with navigation -->
+  <header>
+
+    <div class="header-container">
+      <img src="assets/sgnlogo.png" alt="Logo" class="header-logo" />
+    </div>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <a href="#main">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <!-- CHANGE 1: Updated from #services to #projects -->
+      <a href="#projects">Projects</a>
+      <a href="#work">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main/Hero section -->
+  <section class="main" id="main">
+    <!-- Background Image -->
+    <img src="assets/Banner-2D1.png" alt="Background" id="background-video" />
+
+    <div class="content">
+      <h2>Hello, I'm<br><span>AJAY </span></h2>
+      <div class="animated-text">
+        <h3>Robotics Engineer</h3>
+        <h3>Design Engineer</h3>
+        <h3>R&D Engineer</h3>
+        <h3>Network Engineer</h3>
+        <h3>Hardware Engineer</h3>
+      </div>
+      <!-- CHANGE 2: Hire Me now scrolls to #contact instead of navigating to hireme.html -->
+      <a href="#contact-form" class="btn hire-me-btn">Get in Touch</a>
+    </div>
+  </section>
+
+
+  <!-- Social media icons -->
+  <ul class="example-2">
+    <li class="icon-content">
+      <a href="https://www.linkedin.com/in/ajay-s-34462b333" aria-label="LinkedIn" data-social="linkedin"
+        target="_blank" rel="noopener noreferrer">
+        <div class="filled"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            fill="currentColor"></path>
+        </svg>
+      </a>
+      <div class="tooltip">LinkedIn</div>
+    </li>
+    <li class="icon-content">
+      <a href="https://www.github.com/Ajay-464" aria-label="GitHub" data-social="github" target="_blank"
+        rel="noopener noreferrer">
+        <div class="filled"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+            fill="currentColor"></path>
+        </svg>
+      </a>
+      <div class="tooltip">GitHub</div>
+    </li>
+    <li class="icon-content">
+      <a href="https://www.instagram.com/ajaysvj" aria-label="Instagram" data-social="instagram" target="_blank"
+        rel="noopener noreferrer">
+        <div class="filled"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+            fill="currentColor"></path>
+        </svg>
+      </a>
+      <div class="tooltip">Instagram</div>
+    </li>
+  </ul>
+  </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SEPARATOR: Hero → About -->
+  <!-- ============================================================ -->
+
+  <!-- About section -->
+  <section class="about" id="about">
+    <div class="title reveal">
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="content">
+      <div class="column col-left reveal">
+        <div class="img-card">
+          <img src="assets/profile-1.webp" alt="Ajay S profile photo">
+        </div>
+        <!-- Sliding number animation container -->
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <p>Projects</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            <p>Internships</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+            <p>Hacks/Expo</p>
+          </div>
+        </div>
+      </div>
+      <div class="column col-right reveal">
+        <h2 class="content-title">Hey There! I'm Ajay S</h2>
+        <p class="paragraph-text">
+          As a practical driven Mechatronics engineering student with a strong interest in space science, robotics, and
+          defense
+          technologies, I bring a multidisciplinary skill set that connects core engineering with creative design. I
+          have practical experience in building robotic systems from scratch, along with exposure to research and
+          development in real world applications. I am skilled in system design, 3D modeling using SOLIDWORKS and
+          AutoCAD, and have working knowledge of machine learning, computer vision, and Linux based systems. I enjoy
+          developing and simulating robotic solutions using platforms like ROS and CoppeliaSim, and working with
+          hardware such as Raspberry Pi and ESP microcontrollers. Alongside my technical expertise, I am additionally
+          skilled in UI/UX, web, and graphic design, using tools like Figma, Adobe Photoshop, and Illustrator. I see
+          design as a key part of engineering, helping me create solutions that are both functional and user focused. My
+          curiosity for space and advanced robotics drives me to explore innovative ideas and build impactful,
+          future-ready systems.
+          <br>
+          <br><strong style="font-weight: 700;">Highest Qualification</strong> - B.E. Mechatronics
+          Engineering,<br><strong style="font-weight: 600;">Sri Krishna College of Engineering and Technology,
+            Coimbatore.</strong>
+        </p>
+        <a href="assets/Resume-Ajay_S.pdf" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SEPARATOR: About → Skills -->
+  <!-- ============================================================ -->
+
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <div class="title reveal">
+      <h2 class="section-title">My Skills</h2>
+    </div>
+    <div class="content">
+      <div class="column col-left reveal">
+        <h2 class="content-title">My Skills and Experiences</h2>
+        <p>As a mechatronics engineering student with a multidisciplinary skill set, I bring practical experience in
+          robotics, system design, and intelligent automation. I am skilled in 3D modeling and product development using
+          Solidworks and Fusion 360, with a strong foundation in research and engineering design workflows. My
+          experience includes developing robotic systems using ROS, working in Linux environments, and building
+          applications with Python for machine learning and computer vision tasks. I have also worked on industrial
+          automation using PLCs and embedded systems for real time control applications. In addition, I possess creative
+          skills in UI/UX and graphic design using tools like Figma, Canva, and Adobe Suite, enabling me to design
+          intuitive and user-centered digital interfaces.</p>
+        <a href="#projects" class="skills-down-btn" aria-label="See More">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+      </div>
+      <div class="column col-right reveal">
+        <div class="bar">
+          <div class="info">
+            <span>SOLIDWORKS | Fusion 360</span>
+            <span>95%</span>
+          </div>
+          <div class="line html"></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Product Development | Research</span>
+            <span>85%</span>
+          </div>
+          <div class="line css"></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Linux</span>
+            <span>80%</span>
+          </div>
+          <div class="line javascript"></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>ROS</span>
+            <span>75%</span>
+          </div>
+          <div class="line jquery"></div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>Python</span>
+            <span>70%</span>
+          </div>
+          <div class="line php"></div>
+        </div>
+      </div>
+    </div><br>
+
+    <h2 class="section-title">Tech Stack</h2>
+
+    <!-- CHANGE 3: Improved slider with GPU-accelerated animation (see styles.css) -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="assets/solidworks (1).png" alt="SolidWorks" /></div>
+        <div class="slide"><img src="assets/abb (1).png" alt="ABB" /></div>
+
+        <div class="slide"><img src="assets/arduino (1).png" alt="Arduino" /></div>
+        <div class="slide"><img src="assets/linux-seeklogo.png" alt="Linux" /></div>
+        <div class="slide"><img src="assets/ros-seeklogo.png" alt="ROS" /></div>
+        <div class="slide"><img src="assets/git-seeklogo.png" alt="Git" /></div>
+        <div class="slide"><img src="assets/autocad (1).png" alt="AutoCAD" /></div>
+        <div class="slide"><img src="assets/blender (1).png" alt="Blender" /></div>
+        <div class="slide"><img src="assets/figma (1).png" alt="Figma" /></div>
+        <div class="slide"><img src="assets/adobe dx.png" alt="Adobe XD" /></div>
+        <div class="slide"><img src="assets/ansys.jpg" alt="ANSYS" /></div>
+        <div class="slide"><img src="assets/css logo.png" alt="CSS3" /></div>
+        <div class="slide"><img src="assets/html logo (1).png" alt="HTML5" /></div>
+        <div class="slide"><img src="assets/js logo.png" alt="JavaScript" /></div>
+        <div class="slide"><img src="assets/inkscape (1).png" alt="Inkscape" /></div>
+        <div class="slide"><img src="assets/Illustrator.jpg" alt="Illustrator" /></div>
+        <div class="slide"><img src="assets/photoshop.png" alt="Photoshop" /></div>
+        <div class="slide"><img src="assets/google collab logo.png" alt="Google Colab" /></div>
+        <!-- Duplicated set for seamless loop -->
+        <div class="slide"><img src="assets/solidworks (1).png" alt="SolidWorks" /></div>
+        <div class="slide"><img src="assets/abb (1).png" alt="ABB" /></div>
+        <div class="slide"><img src="assets/arduino (1).png" alt="Arduino" /></div>
+        <div class="slide"><img src="assets/linux-seeklogo.png" alt="Linux" /></div>
+        <div class="slide"><img src="assets/ros-seeklogo.png" alt="ROS" /></div>
+        <div class="slide"><img src="assets/git-seeklogo.png" alt="Git" /></div>
+        <div class="slide"><img src="assets/autocad (1).png" alt="AutoCAD" /></div>
+        <div class="slide"><img src="assets/blender (1).png" alt="Blender" /></div>
+        <div class="slide"><img src="assets/figma (1).png" alt="Figma" /></div>
+        <div class="slide"><img src="assets/adobe dx.png" alt="Adobe XD" /></div>
+        <div class="slide"><img src="assets/ansys.jpg" alt="ANSYS" /></div>
+        <div class="slide"><img src="assets/css logo.png" alt="CSS3" /></div>
+        <div class="slide"><img src="assets/html logo (1).png" alt="HTML5" /></div>
+        <div class="slide"><img src="assets/js logo.png" alt="JavaScript" /></div>
+        <div class="slide"><img src="assets/inkscape (1).png" alt="Inkscape" /></div>
+        <div class="slide"><img src="assets/Illustrator.jpg" alt="Illustrator" /></div>
+        <div class="slide"><img src="assets/photoshop.png" alt="Photoshop" /></div>
+
+        <div class="slide"><img src="assets/google collab logo.png" alt="Google Colab" /></div>
+      </div>
+    </div>
+  </section> <!-- Projects Carousel Section -->
+  <section class="projects" id="projects" style="background-color: #000016;">
+    <div class="title reveal">
+      <h2 class="section-title">My Projects</h2>
+    </div>
+
+    <!-- Carousel wrapper -->
+    <div class="proj-carousel" id="projCarousel">
+
+      <!-- Accent background wash (updated via JS) -->
+      <div class="proj-bg-wash" id="projBgWash"></div>
+
+      <div class="proj-inner">
+
+        <!-- LEFT: Text content -->
+        <div class="proj-content">
+          <div class="proj-content-inner">
+
+            <!-- Slide counter -->
+            <div class="proj-counter" id="projCounter">
+              <span class="proj-counter-line"></span>
+              <span class="proj-counter-text" id="projCounterText">01 / 06</span>
+            </div>
+
+            <!-- Domain tag -->
+            <p class="proj-domain" id="projDomain">Robotics &amp; AI</p>
+
+            <!-- Title -->
+            <h3 class="proj-title" id="projTitle">AUTONOMOUS IV LINE DETECTION &amp; POINTING ROBOT</h3>
+
+            <!-- Description -->
+            <p class="proj-desc" id="projDesc">A vision-guided robotic system that autonomously detects intravenous line
+              insertion points on patients using computer vision, providing real-time pointing assistance to medical
+              staff.</p>
+
+            <!-- Tags -->
+            <div class="proj-tags" id="projTags">
+              <span>Computer
+                Vision</span><span>ROS</span><span>Python</span><span>OpenCV</span><span>Linux</span><span>Raspberry
+                Pi</span>
+            </div>
+
+            <!-- External Link -->
+            <a href="#" target="_blank" class="proj-ext-link" id="projExtLink" aria-label="View Project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+
+            <!-- Nav arrows -->
+            <div class="proj-nav-arrows">
+              <button class="proj-arrow" id="projPrev" aria-label="Previous project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button class="proj-arrow" id="projNext" aria-label="Next project">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT: Image panel -->
+        <div class="proj-image-panel">
+          <div class="proj-image-frame" id="projImageFrame">
+            <img class="proj-image" id="projImage" src="assets/AIVRobot.jpeg" alt="Project image" />
+            <div class="proj-image-overlay" id="projImageOverlay"></div>
+          </div>
+          <!-- Decorative corner accents -->
+          <div class="proj-corner proj-corner--tl" id="projCornerTL"></div>
+          <div class="proj-corner proj-corner--br" id="projCornerBR"></div>
+        </div>
+
+      </div><!-- /.proj-inner -->
+
+      <!-- Progress bar -->
+      <div class="proj-progress-bar" id="projProgressBar">
+
+        <button class="proj-progress-item active" data-index="0" aria-label="Project 1">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">Medical Robot</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="1" aria-label="Project 2">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">P&amp;ID System</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="2" aria-label="Project 3">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">SCD Rover</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="3" aria-label="Project 4">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">Deep Learning</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="4" aria-label="Project 5">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">Agri Bot</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="5" aria-label="Project 6">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">AXIOA</span>
+        </button>
+
+        <button class="proj-progress-item" data-index="6" aria-label="Project 7">
+          <div class="proj-progress-track">
+            <div class="proj-progress-fill"></div>
+          </div>
+          <span class="proj-progress-label">Robotic Arm</span>
+        </button>
+
+      </div><!-- /.proj-progress-bar -->
+
+    </div><!-- /.proj-carousel -->
+  </section>
+
+
+  <!-- ============================================================ -->
+  <!-- SEPARATOR: Projects → Experience  -->
+  <!-- ============================================================ -->
+
+  <!-- Work/Experience section -->
+  <section class="work" id="work" style="background-color: #000016; padding: 0;">
+    <div class="timeline-container">
+      <div class="timeline-header reveal">
+        <h2 class="section-title">Experience</h2>
+        <p class="timeline-subtitle">My professional experience and practical exposure in real world projects.</p>
+      </div>
+
+      <div class="timeline-content-wrapper" id="timelineWrapper">
+
+        <!-- Experience Card 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-left">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+            </div>
+            <h3 class="timeline-date">March 2025 - Sep 2025</h3>
+          </div>
+          <div class="timeline-right">
+            <h3 class="timeline-date-mobile">March 2025 - Sep 2025</h3>
+            <div class="timeline-card">
+              <h4 class="timeline-role">Research Intern</h4>
+              <p class="timeline-company">SPAROBIX, Ahmedabad, Gujarat</p>
+              <div class="timeline-desc">
+                <p>My Research areas for Robotics and Automation in Space science and Technology are:</p>
+                <ul>
+                  <li>Autonomous Robotic Manipulation</li>
+                  <li>Human Robot Interaction & Teleoperation</li>
+                  <li>Macro scale Robotic 3D Printing</li>
+                </ul>
+                <p>• Conducted research and development on the above mentioned areas, Developed hardware and software
+                  robotic systems on each of the topic.
+                  <br>• Collaborated with engineering teams in weekly meetings to present, review, and prototype robotic
+                  solutions using advanced simulation tools.
+                </p>
+                <div class="tech-stack timeline-tags">
+                  <span>Space Robotics</span>
+                  <span>Mobile Robotics</span>
+                  <span>Gazebo</span>
+                  <span>ROS</span>
+                  <span>Machine Learning</span>
+                  <span>Linux</span>
+                  <span>Python</span>
+                  <span>Solidworks</span>
+                  <span>Computer Vision</span>
+                </div>
+                <img src="assets/spacestation-2.jpg" alt="Sparobix Research Intern" class="timeline-image">
+                <a href="assets/Ajay S_Intern-Certificate-Sparobix.pdf" target="_blank" class="btn timeline-btn">View
+                  Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Experience Card 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-left">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+            </div>
+            <h3 class="timeline-date">May 2025 - June 2025</h3>
+          </div>
+          <div class="timeline-right">
+            <h3 class="timeline-date-mobile">May 2025 - June 2025</h3>
+            <div class="timeline-card">
+              <h4 class="timeline-role">Mechatronics Intern</h4>
+              <p class="timeline-company">THALIR AUTOMATIONS, Coimbatore</p>
+              <div class="timeline-desc">
+                <p>Worked under the SPM Projects of Automation Systems & Machineries Manufacturing in:</p>
+                <ul>
+                  <li>Input Shaft Bearing Pressing Machine</li>
+                  <li>Seal Pressing Machine</li>
+                  <li>Performance Testing Machine</li>
+                </ul>
+                <p>And Trial testing & Analysis for:</p>
+                <ul>
+                  <li>Tap body assembly Machine</li>
+                  <li>Vaccum Tip Flaring Station</li>
+                  <li>Hand guard Riveting Station</li>
+                </ul>
+                <div class="tech-stack timeline-tags">
+                  <span>PLC Communication</span>
+                  <span>Hydro-pneumatics</span>
+                  <span>Assembly engineering</span>
+                  <span>Project & Team Management</span>
+                  <span>Electrical panel wiring</span>
+                  <span>Mechatronics Systems</span>
+                  <span>Automation Testing</span>
+                </div>
+                <img src="assets/robotic-arm.jpg" alt="Thalir Automations internship" class="timeline-image">
+                <a href="assets/Internship Certificate - TA (1).pdf" target="_blank" class="btn timeline-btn">View
+                  Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Experience Card 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-left">
+            <div class="timeline-dot-container">
+              <div class="timeline-dot"></div>
+            </div>
+            <h3 class="timeline-date">July 2024</h3>
+          </div>
+          <div class="timeline-right">
+            <h3 class="timeline-date-mobile">July 2024</h3>
+            <div class="timeline-card">
+              <h4 class="timeline-role">Quality Control Intern</h4>
+              <p class="timeline-company">HARSHA CNC, Coimbatore</p>
+              <div class="timeline-desc">
+                <p>• Executed machine codes and technical operations and Collaborated with Quality Control team to
+                  optimize machining processes and reduce downtime.</p>
+                <p>• Conducted regular maintenance checks and troubleshooting.</p>
+                <p>• Utilized CAD/CAM software for programming and design, enhancing accuracy and productivity.</p>
+                <div class="tech-stack timeline-tags">
+                  <span>Quality Control</span>
+                  <span>CNC Machining Process</span>
+                  <span>VMC & HMC</span>
+                  <span>Machining Tools</span>
+                  <span>Documentation</span>
+                  <span>Machine Operation</span>
+                </div>
+                <img src="assets/cnchmc.jpg" alt="Harsha CNC internship" class="timeline-image">
+                <a href="assets/Adobe Scan Aug 08, 2024.pdf" target="_blank" class="btn timeline-btn">View
+                  Certificate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Progress Lines -->
+        <div class="timeline-line-background"></div>
+        <div class="timeline-line-progress" id="timelineProgress"></div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Certifications section -->
+  <section class="certifications" id="certifications">
+    <div class="title reveal">
+      <h2 class="section-title">My Certifications</h2>
+      <br>
+    </div>
+    <div class="cert-slider">
+      <div class="cert-track">
+        <!-- Original Set -->
+        <div class="cert-slide"><img src="assets/certificate-1.jpg" alt="Certificate 1"></div>
+        <div class="cert-slide"><img src="assets/certificate-2.jpg" alt="Certificate 2"></div>
+        <div class="cert-slide"><img src="assets/certificate-3.png" alt="Certificate 3"></div>
+        <div class="cert-slide"><img src="assets/certificate-4.png" alt="Certificate 4"></div>
+        <div class="cert-slide"><img src="assets/certificate-5.png" alt="Certificate 5"></div>
+        <div class="cert-slide"><img src="assets/certificate-6.png" alt="Certificate 6"></div>
+        <div class="cert-slide"><img src="assets/certificate-7.png" alt="Certificate 7"></div>
+        <div class="cert-slide"><img src="assets/certificate-8.png" alt="Certificate 8"></div>
+        <div class="cert-slide"><img src="assets/certificate-9.png" alt="Certificate 9"></div>
+        <div class="cert-slide"><img src="assets/certificate-10.png" alt="Certificate 10"></div>
+        <div class="cert-slide"><img src="assets/certificate-11.png" alt="Certificate 11"></div>
+        <div class="cert-slide"><img src="assets/certificate-12.jpg" alt="Certificate 12"></div>
+        <div class="cert-slide"><img src="assets/certificate-13.jpg" alt="Certificate 13"></div>
+        <div class="cert-slide"><img src="assets/certificate-14.jpg" alt="Certificate 14"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464  consume ai azure_page-0001.jpg"
+            alt="Certificate 15"></div>
+        <div class="cert-slide"><img src="assets/six sig ln_page-0001.jpg" alt="Certificate 16"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ deployed container apps_page-0001.jpg"
+            alt="Certificate 17"></div>
+        <div class="cert-slide"><img src="assets/sol ln_page-0001.jpg" alt="Certificate 18"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ Microsoft Learn_page-0001.jpg"
+            alt="Certificate 19"></div>
+        <div class="cert-slide"><img src="assets/plc ln_page-0001.jpg" alt="Certificate 20"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ SIEM_page-0001.jpg" alt="Certificate 21">
+        </div>
+        <div class="cert-slide"><img src="assets/deeplern ln_page-0001.jpg" alt="Certificate 22"></div>
+        <div class="cert-slide"><img src="assets/LinkedIn Learning Certificate_page-0001.jpg" alt="Certificate 23">
+        </div>
+
+        <!-- Duplicated Set for Seamless Looping -->
+        <div class="cert-slide"><img src="assets/certificate-1.jpg" alt="Certificate 1"></div>
+        <div class="cert-slide"><img src="assets/certificate-2.jpg" alt="Certificate 2"></div>
+        <div class="cert-slide"><img src="assets/certificate-3.png" alt="Certificate 3"></div>
+        <div class="cert-slide"><img src="assets/certificate-4.png" alt="Certificate 4"></div>
+        <div class="cert-slide"><img src="assets/certificate-5.png" alt="Certificate 5"></div>
+        <div class="cert-slide"><img src="assets/certificate-6.png" alt="Certificate 6"></div>
+        <div class="cert-slide"><img src="assets/certificate-7.png" alt="Certificate 7"></div>
+        <div class="cert-slide"><img src="assets/certificate-8.png" alt="Certificate 8"></div>
+        <div class="cert-slide"><img src="assets/certificate-9.png" alt="Certificate 9"></div>
+        <div class="cert-slide"><img src="assets/certificate-10.png" alt="Certificate 10"></div>
+        <div class="cert-slide"><img src="assets/certificate-11.png" alt="Certificate 11"></div>
+        <div class="cert-slide"><img src="assets/certificate-12.jpg" alt="Certificate 12"></div>
+        <div class="cert-slide"><img src="assets/certificate-13.jpg" alt="Certificate 13"></div>
+        <div class="cert-slide"><img src="assets/certificate-14.jpg" alt="Certificate 14"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464  consume ai azure_page-0001.jpg"
+            alt="Certificate 15"></div>
+        <div class="cert-slide"><img src="assets/six sig ln_page-0001.jpg" alt="Certificate 16"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ deployed container apps_page-0001.jpg"
+            alt="Certificate 17"></div>
+        <div class="cert-slide"><img src="assets/sol ln_page-0001.jpg" alt="Certificate 18"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ Microsoft Learn_page-0001.jpg"
+            alt="Certificate 19"></div>
+        <div class="cert-slide"><img src="assets/plc ln_page-0001.jpg" alt="Certificate 20"></div>
+        <div class="cert-slide"><img src="assets/Achievements - ajays-464 _ SIEM_page-0001.jpg" alt="Certificate 21">
+        </div>
+        <div class="cert-slide"><img src="assets/deeplern ln_page-0001.jpg" alt="Certificate 22"></div>
+        <div class="cert-slide"><img src="assets/LinkedIn Learning Certificate_page-0001.jpg" alt="Certificate 23">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SEPARATOR: Certifications → Contact  -->
+  <!-- ============================================================ -->
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="title reveal">
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="card reveal">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info">
+              <h3>Address</h3>
+              <span>Tiruppur, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="info">
+              <h3>Phone</h3>
+              <span>+91 9566588778</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="info">
+              <h3>Email Address</h3>
+              <span>ajaysaravanakumarr<br>@gmail.com</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon">
+              <a href="https://github.com/Ajay-464" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="info">
+              <h3>Github</h3>
+              <span>Ajay 464</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon">
+              <a href="https://www.instagram.com/ajay_.464" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="info">
+              <h3>Instagram</h3>
+              <span>ajay_.464</span>
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="contact-icon">
+              <a href="https://www.linkedin.com/in/ajay-s-34462b333" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="info">
+              <h3>LinkedIn</h3>
+              <span>Ajay S</span>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="contact-form">
+            <form id="contact-form">
+              <h3>Connect with Me !!</h3>
+              <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="input-box">
+                <input type="email" name="email" id="email" placeholder="you@gmail.com" required />
+              </div>
+              <div class="input-box">
+                <input type="text" name="phone" id="phone" placeholder="Phone no." required />
+              </div>
+              <div class="input-box">
+                <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="input-box">
+                <button type="submit" class="send-btn">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fas fa-paper-plane btn-icon"></i>
+                </button>
+              </div>
+              <div class="result-container">
+                <p class="result-message" id="result"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER SECTION -->
+  <!-- ============================================================ -->
+  <footer class="footer">
+
+
+
+    <!-- Actual footer content -->
+    <div class="footer-container">
+      <img src="assets/SIgn LOgo Ajay (1).png" alt="Logo" class="footer-logo" />
+      <p>Created by Ajay464 <span class="far fa-copyright"></span> 2026 || <a href="#">Ajay 464</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
